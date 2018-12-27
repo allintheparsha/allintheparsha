@@ -3,12 +3,12 @@ html
   head
     title= title
     link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+    //link(rel='stylesheet', href='stylesheets/style.css')
 
     // CDN Bootstrap Stylesheet
     // link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css')
   
-  body
-    block content 
+  header
     nav.navbar.navbar-light.bg-light.sticky-top
       a.navbar-brand(href="#") allintheparsha
       button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
@@ -29,7 +29,8 @@ html
               a.dropdown-item(href="#") Another action
               div.dropdown-divider
               a.dropdown-item(href="#") Something else here
-          
+    body 
+      block content      
     //-
       form.form-inline.my-2.my-lg-0
         input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
