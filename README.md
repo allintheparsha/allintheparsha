@@ -25,4 +25,4 @@ Such as system is ripe for abuse. Users will attempt to upload fake profiles in 
 
 ## How to contribute
 
-This project is built on Node.js, using ExpressJS. Bootstrap styling.
+This project is built on Node.js, using ExpressJS, Pug, and Bootstrap.
