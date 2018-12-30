@@ -11,26 +11,18 @@ html
     // link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css')
   
   header
-    nav.navbar.navbar-light.bg-light.sticky-top.animated.fadeIn.slow
+    nav.navbar.navbar-expand-md.navbar-toggleable-md.navbar-light.bg-light.sticky-top.animated.fadeIn.slow.nav-fill
       a.navbar-brand(href="/") AllInTheParsha
-      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+     
+      button.navbar-toggler(data-toggle="collapse" data-target="#navBar")
         span.navbar-toggler-icon
-      div.collapse.navbar-collapse#navbarSupportedContent
-        ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href="/") Home 
-              span.sr-only (current)
-          li.nav-item
-           a.nav-link(href="/login") Login
-          li.nav-item
-           a.nav-link(href="/register") Register
-          li.nav-item.dropdown
-            a.nav-link.dropdown-toggle#navbarDropdown(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Account
-            div.dropdown-menu(aria-labelledby="navbarDropdown")
-             a.dropdown-item(href="#") Action
-              a.dropdown-item(href="#") Another action
-              div.dropdown-divider
-              a.dropdown-item(href="#") Something else here
+      .collapse.navbar-collapse#navBar
+        .navbar-nav
+          a.nav-item.nav-link(href="/") Home 
+          span.sr-only (current)
+          a.nav-item.nav-link(href="/login") Login
+          a.nav-item.nav-link(href="/register") Register
+          
     body 
       block content      
     //-
