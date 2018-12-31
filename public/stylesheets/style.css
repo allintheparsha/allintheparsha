@@ -1,8 +1,24 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+/*
+  body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    }
 
-a {
-  color: #00B7FF;
+  a {
+    color: #00B7FF;
+    }
+  */
+
+  /* Responsive Title Text on Home Page*/
+@media (max-width: 576px) {
+    .mainTitle { font-size: 0.5rem;}
+}
+@media (max-width: 768px) {
+    .mainTitle { font-size: 0.75rem;}
+}
+@media (max-width: 992px) {
+    .mainTitle { font-size: 1rem;}
+}
+@media (max-width: 1200px) {
+    .mainTitle { font-size: 2rem;}
 }
