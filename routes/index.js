@@ -14,6 +14,10 @@ router.get('/register', function(req, res, next) {
   res.render('register');
 });
 
+router.get('/resume', function(req, res, next) {
+  res.render('resume');
+});
+
 
 
 module.exports = router;

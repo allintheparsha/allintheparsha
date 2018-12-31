@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    br
+    h6.display-4 Please enter your profile details
+    br
+    br
+    .container
+        form#resumeform(action="/")
+            .form-row.py-3
+                .col
+                    label(for="firstName") First Name
+                    input.form-control#firstName(type="text", name="firstName", required)
+                .col
+                    label(for="middleNames") Middle Names
+                    input.form-control#middleNames(type="text", name="middleNames")
+                .col
+                    label(for="lastName") Last Name
+                    input.form-control#lastName(type="text", name="lastName", required)
+            .row.py-3
+                .col-auto
+                    label(for="dob") Date of Birth
+                    input.form-control#dob(type="date", name="dob", required)
+            br
+            .container
+                span.text-info Please check your details one more time before submitting!
+            br
+            button.btn.btn-lg.btn-block.btn-primary.btn-disabled#submit(type="submit" data-toggle="button") Submit!
